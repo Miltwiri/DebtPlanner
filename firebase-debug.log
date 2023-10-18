@@ -1,0 +1,39 @@
+[debug] [2023-10-06T10:28:37.484Z] ----------------------------------------------------------------------
+[debug] [2023-10-06T10:28:37.488Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp 840\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-10-06T10:28:37.489Z] CLI Version:   12.6.2
+[debug] [2023-10-06T10:28:37.490Z] Platform:      win32
+[debug] [2023-10-06T10:28:37.490Z] Node Version:  v18.13.0
+[debug] [2023-10-06T10:28:37.491Z] Time:          Fri Oct 06 2023 13:28:37 GMT+0300 (East Africa Time)
+[debug] [2023-10-06T10:28:37.492Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-06T10:28:37.507Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-06T10:28:37.508Z] > authorizing via signed-in user (miltonelim64@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hp 840\Desktop\Fullstack\Frontend\React Native\Projos\Za Me\RNbare\Awilo\DebtPlanner
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-10-06T10:29:12.640Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-10-06T10:29:17.935Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-10-06T10:29:17.935Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project debtplanner-586f9 (DebtPlanner) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

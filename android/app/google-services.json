@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1028324455279",
+    "project_id": "debtplanner-586f9",
+    "storage_bucket": "debtplanner-586f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028324455279:android:cfa3b5c766214455816e9a",
+        "android_client_info": {
+          "package_name": "com.debtplanner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWI431jN392Kn61j9BtaeRfhB67e9Lp9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

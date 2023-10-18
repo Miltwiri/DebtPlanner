@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState} from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
 import CustomButton from '../components/shared/CustomButton';
 import CustomInput from '../components/shared/CustomInput';

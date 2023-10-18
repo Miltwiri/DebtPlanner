@@ -38,7 +38,7 @@ const BeneficiaryDetails = ({ route }) => {
 
     // Update the balance in Firestore whenever it changes
     updateBalanceInFirestore(calcBalance);
-  }, [userTransactions]); // This useEffect runs whenever userTransactions changes
+  }, [userTransactions, calcBalance]); // This useEffect runs whenever userTransactions changes
 
   const fetchUserTransactions = async () => {
     try {

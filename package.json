@@ -20,6 +20,8 @@
     "@react-navigation/stack": "^6.3.18",
     "@rneui/base": "^4.0.0-rc.7",
     "@rneui/themed": "^4.0.0-rc.8",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.3.2",
     "date-fns": "^2.30.0",
     "moment": "^2.29.4",
     "react": "18.2.0",

@@ -79,11 +79,11 @@ const Home = ({ navigation }) => {
         console.error('Invalid timestamp for transaction:', transaction);
       }
     });
-  
+
     setDailyCreditSum(dailyCreditSums);
     setDailyDebtSum(dailyDebtSums);
   };
-  
+
 
   // Format a number with commas
   const formatNumberWithCommas = (number) => {

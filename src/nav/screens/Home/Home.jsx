@@ -36,7 +36,7 @@ const Home = ({ navigation }) => {
           platform: data.platform || '',
           timestamp: data.timestamp || '',
           comment: data.comment || '',
-          // Add other fields you want to include in the transaction object
+          // Add other fields to include in the transaction object
         });
       });
 

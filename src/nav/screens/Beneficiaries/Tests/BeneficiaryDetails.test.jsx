@@ -35,7 +35,7 @@ describe('BeneficiaryDetails', () => {
 
   it('renders the component', () => {
     const { getByText, getByTestId } = render(<BeneficiaryDetails route={route} />);
-    
+
     expect(getByText('John Doe')).toBeTruthy();
     expect(getByTestId('balance')).toBeTruthy();
     expect(getByTestId('transaction-list')).toBeTruthy();
@@ -43,11 +43,11 @@ describe('BeneficiaryDetails', () => {
 
   it('calls the fetchUserTransactions function', async () => {
     const { getByText } = render(<BeneficiaryDetails route={route} />);
-    
+
     await act(async () => {
       fireEvent.press(getByText('Clear Transactions'));
     });
-    
+
     // Add your assertions for the fetchUserTransactions function.
   });
 

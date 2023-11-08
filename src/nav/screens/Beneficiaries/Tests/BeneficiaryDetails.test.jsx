@@ -48,7 +48,7 @@ describe('BeneficiaryDetails', () => {
       fireEvent.press(getByText('Clear Transactions'));
     });
 
-    // Add your assertions for the fetchUserTransactions function.
+    // Add your assertions for the fetchUserTransactions function. 
   });
 
   it('calls the deleteClient function', async () => {

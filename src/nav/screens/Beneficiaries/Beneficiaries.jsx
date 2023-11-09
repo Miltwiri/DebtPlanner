@@ -52,7 +52,7 @@ const Beneficiaries = () => {
         clientList.push(client);
       });
 
-      // Sort the clientList array by the first letter of the name
+      // Sort the clientList array by the first letter
       clientList.sort((a, b) => {
         const nameA = a.name.toUpperCase();
         const nameB = b.name.toUpperCase();

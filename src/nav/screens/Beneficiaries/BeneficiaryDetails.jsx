@@ -76,7 +76,7 @@ const BeneficiaryDetails = ({ route }) => {
 
   const formatTimestamp = (timestamp) => {
     if (!timestamp) {
-      return 'N/A'; // Handle "Invalid date" gracefully
+      return 'date not set'; // Handle "Invalid date" gracefully
     }
 
     // Convert Firebase Firestore Timestamp to a JavaScript Date object

@@ -24,6 +24,7 @@ const Beneficiaries = () => {
   // search
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredClients, setFilteredClients] = useState([]);
+  const [hasSearchContent, setHasSearchContent] = useState(false);
 
   const [originalClients, setOriginalClients] = useState([]); // Store the original list of clients
 
@@ -73,11 +74,13 @@ const Beneficiaries = () => {
   };
 
   const handleSearch = (query) => {
+    setHasSearchContent(false);
     setSearchQuery(query);
     if (!query) {
       // If the query is empty, show all clients
       setFilteredClients([]);
     } else {
+      setHasSearchContent(true);
       const lowerCaseQuery = query.toLowerCase();
       // Check for keywords like "debt" or "credit" in the search query
       if (lowerCaseQuery === 'debt') {
@@ -94,6 +97,12 @@ const Beneficiaries = () => {
         setFilteredClients(filtered);
       }
     }
+  };
+
+  const clearSearch = () => {
+    setSearchQuery('');
+    setHasSearchContent(false);
+    setFilteredClients([]);
   };
 
   // ...
@@ -137,8 +146,9 @@ const Beneficiaries = () => {
             // Handle search button press
           }}
         >
-          <Ionicons name="search" size={20} color="white" />
-          <TextInput placeholder={"search"} style={{ width: 300, height: 50, borderBottomColor: "white", borderBottomWidth: 1, color: "white", fontSize: 18 }} placeholderTextColor="white" onChangeText={handleSearch} value={searchQuery} />
+          <Ionicons name="search" size={20} color="white" style={{ marginStart: 10 }} />
+          <TextInput placeholder={"search"} style={{ width: 250, height: 50, borderBottomColor: "white", fontSize: 18, color:"white"}} placeholderTextColor="white" onChangeText={handleSearch} value={searchQuery} />
+          {hasSearchContent ? <Ionicons name="close-circle-sharp" size={27} color="gray" style={{ marginStart: 10 }} onPress={clearSearch}/> : null}
         </View>
       </View>
 
@@ -213,7 +223,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#5D3FD3',
     borderRadius: 10,
     alignItems: 'center',
-    justifyContent: "center"
+    borderBottomWidth: 1,
+    borderBottomColor: "white"
+    // justifyContent: "center"
   },
   searchButtonText: {
     color: 'white',

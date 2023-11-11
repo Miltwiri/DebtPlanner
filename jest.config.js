@@ -5,7 +5,10 @@ module.exports = {
   transform: {
     '^.+\\.(js|jsx)$': 'babel-jest', // Transform JavaScript files using Babel
   },
-  moduleFileExtensions: ['js', 'jsx'],
+  transformIgnorePatterns: [
+    'node_modules/(?!((jest-)?react-native|@react-native-firebase/firestore|@react-native(-community)?)/)'
+  ],
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
   ],

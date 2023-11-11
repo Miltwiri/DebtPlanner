@@ -1,5 +1,4 @@
 // App.js
-import 'react-native-gesture-handler';
 import React, { useContext, useState, useEffect } from 'react'
 import TryLogin from './src/examples/TryLogin';
 import auth from '@react-native-firebase/auth';
